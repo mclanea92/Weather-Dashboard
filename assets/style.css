@@ -15,3 +15,8 @@ button {
 /* .fiveDay {
     padding: 100px;
 } */
+
+.citySearch {
+    display: inline-flex;
+    height: 60px;
+}
