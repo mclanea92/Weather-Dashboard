@@ -22,10 +22,11 @@
                         Search Weather
                       </button>
                 </div>
-                <div class="col-8">
+                <div class="col-8 text-center">
                     <div class="displayWeather">
                         <h2>Today's Weather</h2>
-                        <div class="todayWeather"></div>
+                        <div id="currentTemp currentWind currentUV currentHumid"> </div>
+                        <h3 class="container border p-6 todayWeather"></h3>
                     </div>
                     <div>
                         <h2>5 Day Forcast</h2>
@@ -43,7 +44,7 @@
 
     </main>
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
