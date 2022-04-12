@@ -19,22 +19,9 @@ fetch(APIkey).then(function(response){
     console.log(data.main.temp)
     var currentTemp = document.getElementById('#currentTemp')
     currentTemp = data.main.temp
-    todayWeather.append(Math.floor(currentWeather))
+    todayWeather.append(Math.floor(currentTemp))
 })
 }
-
-// function CitySeachFunction(){
-//     var cityName = document.querySelector('.citynameinput').value
-// var APIkey = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=b593b8f7d2b3fb75befb732897df7d93"
-// fetch(APIkey).then(function(response){
-//     return response.json()
-// }).then(function(data){
-//     console.log(data.main.humidity)
-//     var currentHumid = document.getElementById('#currentHumid')
-//     currentHumid = data.main.humidity
-//     todayWeather.append(currentHumid)
-// })
-// }
 
 
 citySearch.addEventListener('click', CitySeachFunction) 
